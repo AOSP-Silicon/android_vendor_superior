@@ -30,6 +30,7 @@ SOONG_CONFIG_NAMESPACES += superiorGlobalVars
 SOONG_CONFIG_superiorGlobalVars += \
     additional_gralloc_10_usage_bits \
     camera_needs_client_info \
+    disable_postrender_cleanup \
     needs_camera_boottime \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
@@ -56,6 +57,7 @@ endif
 # Soong bool variables
 SOONG_CONFIG_superiorGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_superiorNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
+SOONG_CONFIG_superiorGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_superiorQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_superiorQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_superiorGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
