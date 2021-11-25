@@ -112,6 +112,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/superior/overlay
 # Device Overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/superior/overlay/common
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayFS
+
 #Telephony
 $(call inherit-product, vendor/superior/config/telephony.mk)
 
