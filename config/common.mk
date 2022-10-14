@@ -59,6 +59,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Launcher3QuickStep
 
+# Navigation
+PRODUCT_PACKAGES += \
+    ImmersiveNavigationOverlay
+
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
 #ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
